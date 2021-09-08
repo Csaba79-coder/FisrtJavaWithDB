@@ -11,7 +11,7 @@ public class WritingToDatabase {
 
     DataBaseEngine dataBaseEngine = new DataBaseEngine();
 
-    // boolean just to know if it was successful! (it can be also void, but does not give back result!
+    // boolean just to know if it was successful! (it can be also void, but does not give back result!)
 
     public boolean addMembersToDataBase(Members members) {
         String query = "INSERT INTO " + DataBaseVariables.TABLE_MEMBERS + "(name, email) VALUES (?, ?);";

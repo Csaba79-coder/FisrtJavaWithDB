@@ -8,7 +8,12 @@ import application.model.Members;
 import application.model.State;
 import application.model.Subjects;
 import application.util.Print;
+import tantus.DisplayProfilePic;
+import tantus.ImageExample;
+import tantus.MyJFrame;
+import tantus.ShowProfilePic;
 
+import javax.swing.*;
 import java.util.List;
 
 public class Processor {
@@ -90,5 +95,9 @@ public class Processor {
             List<Members> membersList = dataBaseEngine.listAllMembers();
             System.out.println(membersList);
         }
+
+        // new MyJFrame().showJFrame();
+        // new DisplayProfilePic().displayPhoto();
+        new ImageExample().runPicWithGui();
     }
 }

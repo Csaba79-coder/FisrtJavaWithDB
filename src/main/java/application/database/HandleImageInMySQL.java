@@ -2,6 +2,8 @@ package application.database;
 
 import application.model.Members;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
@@ -9,7 +11,7 @@ import java.sql.PreparedStatement;
 
 public class HandleImageInMySQL {
 
-    private InputStream readPic() {
+    public InputStream readPic() {
 
         try {
             return new FileInputStream("src/main/resources/CsabaVadasz.png");
@@ -41,6 +43,4 @@ public class HandleImageInMySQL {
         }
         return false;
     }
-
-
 }
