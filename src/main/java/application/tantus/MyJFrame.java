@@ -1,4 +1,4 @@
-package tantus;
+package application.tantus;
 
 import javax.swing.*;
 

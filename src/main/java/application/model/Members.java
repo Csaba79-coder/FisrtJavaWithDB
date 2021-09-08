@@ -1,6 +1,5 @@
 package application.model;
 
-import java.sql.Blob;
 import java.sql.Timestamp;
 import java.util.List;
 

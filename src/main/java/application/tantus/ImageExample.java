@@ -1,4 +1,4 @@
-package tantus;
+package application.tantus;
 
 import application.database.HandleImageInMySQL;
 
@@ -6,12 +6,9 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Objects;
+
 import javax.imageio.ImageIO;
 import javax.swing.*;
-
-import static javax.imageio.ImageIO.read;
-
 
 /**
  * Created with IntelliJ IDEA.

@@ -8,12 +8,7 @@ import application.model.Members;
 import application.model.State;
 import application.model.Subjects;
 import application.util.Print;
-import tantus.DisplayProfilePic;
-import tantus.ImageExample;
-import tantus.MyJFrame;
-import tantus.ShowProfilePic;
-
-import javax.swing.*;
+import application.tantus.ImageExample;
 import java.util.List;
 
 public class Processor {

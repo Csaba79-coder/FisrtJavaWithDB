@@ -1,8 +1,7 @@
-package tantus;
+package application.tantus;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.Objects;
 
 import javax.swing.ImageIcon;
 

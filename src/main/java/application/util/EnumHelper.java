@@ -1,9 +1,5 @@
 package application.util;
 
-import application.database.Column;
-
-import java.util.Objects;
-
 public class EnumHelper {
 
     // static and generic!!! because of the T as input any of enum is OK ... column or table, no matter! (just 1 thing be ENUM!)
@@ -17,7 +13,7 @@ public class EnumHelper {
 
         if (isEnumInDB) {
             return name.replace("_", " ");
-        } else if (name.equals("ID")) {
+        } else if ("ID".equals(name)) {
             return name.toUpperCase();
         }
 
