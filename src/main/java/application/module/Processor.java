@@ -7,6 +7,7 @@ import application.model.Courses;
 import application.model.Members;
 import application.model.State;
 import application.model.Subjects;
+import application.tantus.ImportedPrint;
 import application.util.Print;
 import application.tantus.ImageExample;
 import java.util.List;
@@ -94,5 +95,7 @@ public class Processor {
         // new MyJFrame().showJFrame();
         // new DisplayProfilePic().displayPhoto();
         new ImageExample().runPicWithGui();
+
+        ImportedPrint.print("I am so proud of this project, let\'s start refactor!");
     }
 }
