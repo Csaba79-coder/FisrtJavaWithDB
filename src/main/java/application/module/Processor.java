@@ -9,10 +9,10 @@ import application.model.Members;
 import application.model.State;
 import application.model.Subjects;
 // import application.tantus.ImportedPrint;
+import application.tantus.EntryToTheProgram;
 import application.util.Print;
 import application.tantus.ImageExample;
 
-import java.sql.ResultSet;
 import java.util.List;
 
 public class Processor {
@@ -21,6 +21,9 @@ public class Processor {
     }
 
     public void run() {
+
+        new EntryToTheProgram().enterTheProgram();
+
         // connection for existing DataBase!
 
         DataBaseEngine dataBaseEngine = new DataBaseEngine(); // should connect
