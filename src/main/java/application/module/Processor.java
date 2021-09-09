@@ -2,6 +2,7 @@ package application.module;
 
 import application.database.DataBaseEngine;
 import application.database.HandleImageInMySQL;
+import application.database.ResultSetWithSchemas;
 import application.database.TryWritingToDataBase;
 import application.model.Courses;
 import application.model.Members;
@@ -10,6 +11,8 @@ import application.model.Subjects;
 // import application.tantus.ImportedPrint;
 import application.util.Print;
 import application.tantus.ImageExample;
+
+import java.sql.ResultSet;
 import java.util.List;
 
 public class Processor {
@@ -97,5 +100,11 @@ public class Processor {
         new ImageExample().runPicWithGui();
 
         // ImportedPrint.print("I am so proud of this project, let\'s start refactor!");
+
+        // for showing later in JFrame:
+        // https://stackoverflow.com/questions/13307743/displaying-jtable-in-jframe
+
+        boolean result = new ResultSetWithSchemas().getTable();
+        System.out.println("Is not empty result with Resultset: " + result);
     }
 }
