@@ -11,15 +11,21 @@ public class EntryToTheProgram {
     int tries = 3;
     int triesLeft = 3;
     boolean quit = false;
+    // JPasswordField pwd = new JPasswordField(10);
+    int status;
 
     private boolean verifyUsernameAndPassword() {
 
         // TODO hide password during typing!
-        
+
         username = JOptionPane.showInputDialog("Username: ");
         password = JOptionPane.showInputDialog("Password: ");
+        // password = JOptionPane.showConfirmDialog(null, pwd, "Password: ", JOptionPane.OK_CANCEL_OPTION);
         tries--;
-        System.out.println("You have: " + --triesLeft + " more left!") ;
+
+        // "DATABASE_PASSWORD"
+        // "HIDDEN_PASSWORD"
+
         if (username != null && password != null) {
             if (username.equals(System.getenv("DATABASE_USER")) &&
                     password.equals(System.getenv("DATABASE_USER"))) {
@@ -27,6 +33,7 @@ public class EntryToTheProgram {
                 return true;
             }
         }
+        System.out.println("You have: " + --triesLeft + " more left!");
         JOptionPane.showMessageDialog(null, rejectMessage);
         return false;
     }
@@ -35,5 +42,10 @@ public class EntryToTheProgram {
         while (!verifyUsernameAndPassword() && tries > 0) {
             verifyUsernameAndPassword();
         }
+        exit(0);
+    }
+
+    public static void exit(int status) {
+        System.exit(status); // equivalent with: Runtime.getRuntime().exit(status);
     }
 }
