@@ -42,7 +42,7 @@ public class EntryToTheProgram {
         while (!verifyUsernameAndPassword() && tries > 0) {
             verifyUsernameAndPassword();
         }
-        exit(0);
+        // exit(0);
     }
 
     public static void exit(int status) {
